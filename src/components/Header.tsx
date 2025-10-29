@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Menu, X, Phone, Mail, Sparkles } from 'lucide-react';
+import { Menu, X, Phone, Mail } from 'lucide-react';
+import Logo from './Logo';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,16 +15,8 @@ const Header = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-3 sm:py-4">
           {/* Logo Section */}
-          <div className="flex items-center space-x-2 sm:space-x-3">
-            <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
-              <Sparkles className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-            </div>
-            <div>
-              <div className="text-lg sm:text-xl lg:text-2xl font-bold bg-gradient-to-r from-orange-600 to-orange-700 bg-clip-text text-transparent">
-                Jagadeka
-              </div>
-              <div className="text-xs text-gray-500 font-medium -mt-1 hidden xs:block">Smart Solutions</div>
-            </div>
+          <div className="h-12 sm:h-14 lg:h-16">
+            <Logo className="h-full" showText={true} variant="compact" />
           </div>
 
           {/* Desktop Navigation */}

@@ -1,5 +1,6 @@
 import React from 'react';
-import { Facebook, Mail, Phone, MapPin, ExternalLink, Sparkles } from 'lucide-react';
+import { Facebook, Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
+import Logo from './Logo';
 
 const Footer = () => {
   const scrollToSection = (sectionId: string) => {
@@ -19,16 +20,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="mb-8">
-              <div className="flex items-center space-x-3 mb-4">
-                <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
-                  <Sparkles className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <div className="text-2xl font-bold bg-gradient-to-r from-orange-400 to-orange-500 bg-clip-text text-transparent">
-                    Jagadeka
-                  </div>
-                  <div className="text-xs text-gray-400 font-medium -mt-1">Smart Solutions</div>
-                </div>
+              <div className="h-16 mb-6 invert brightness-200">
+                <Logo className="h-full" showText={true} variant="full" />
               </div>
               <p className="text-gray-300 leading-relaxed">
                 End-to-end IT infrastructure and security solutions delivered with multi-vendor expertise across Telangana and Andhra Pradesh.
